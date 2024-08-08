@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+body {
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logoTam {
+    width: 100px;
+    height: 100px;
+
+}
+
+.fondoNavbar {
+
+    background-color: #9370DB;
+}
+
+.tituloPrincipal {
+
+    text-align: center;
+    font-family: "Titillium Web", sans-serif;
+}
+
+.contenedorFooter {
+
+
+    border: 1px solid black;
+    padding: 10px;
+    padding-bottom: 100px;
+    background-color: #9370DB;
+    padding-top: 10px;
+
+}
+
+.imgFooter {
+
+    width: 50px;
+    width: 50px;
+    flex-direction: row;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.tituloSecundario {
+
+    text-align: center;
+    font-family: "Titillium Web", sans-serif;
+
+}
+
+.logoTamfooter {
+
+    width: 100px;
+    height: 100px;
+    flex-direction: row;
+    display: flex;
+    justify-content: flex-start;
+
+}
+.productosDestacados {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.productosDestacados h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.producto {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+.producto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+@media (min-width: 600px) {
+    .productosDestacados {
+        display: flex;
+        flex-wrap:wrap ;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .producto {
+        flex: 1 1 calc(33.333% - 20px);
+        margin: 10px;
+    }
+}
+/*------------------------------------------*/
+/*--------------FOOTER------------*/
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 10px 20px;
+    background-color: #9370DB;
+    color: #fff;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo-sticky {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.footer-center {
+    text-align: center;
+}
+
+.logo-pagina {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.redes-sociales a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.redes-sociales a:hover {
+    color: #ddd;
+}
+
+@media (max-width: 600px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-left, .footer-center {
+        margin-bottom: 10px;
+    }
+}
+/*------------------------------------------*/
+/*--------------PAGINA PRODUCTO------------*/
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.producto {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    width: calc(33.333% - 40px);
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s; 
+}
+
+.producto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.producto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.descuento {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: red;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .producto {
+        width: calc(50% - 40px);
+    }
+}
+
+@media (max-width: 480px) {
+    .producto {
+        width: 100%;
+    }
+}   
+/*------------------------------------------*/
+/*--------------PAGINA NOSOTROS------------*/
+.sobreNosotros {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.sobreNosotros h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.sobreNosotros p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.sobreNosotros ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sobreNosotros ul li {
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+    .sobreNosotros {
+        padding: 10px;
+    }
+
+    .sobreNosotros ul li {
+        padding: 5px;
+    }
+}
+/*------------------------------------------*/
+/*--------------PAGINA SUCURSALES------------*/
+.sucursales {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.listaSucursales {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 20px;
+}
+
+.sucursal {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.sucursal img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.mapa {
+    flex: 2;
+    min-width: 300px;
+}
+
+@media (max-width: 768px) {
+    .sucursales {
+        flex-direction: column;
+    }
+
+    .listaSucursales, .mapa {
+        margin: 0;
+    }
+}
+
+/*------------------------------------------*/
+/*--------------PAGINA CONTACTO-----------*/
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.contactoForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactoForm label {
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.contactoForm input,
+.ccontactoForm textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contactoForm button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #5cb85c;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contactoForm button:hover {
+    background-color: #4cae4c;
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    .contactoForm input,
+    .ccontactoForm textarea {
+        font-size: 14px;
+    }
+
+    .contact-form button {
+        font-size: 14px;
+    }
+}
